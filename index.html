@@ -32,11 +32,6 @@
               <a href="#" class="link no-underline">Contacts</a>
             </li>
           </ul>
-          <button type="button">
-            <svg>
-              <use href="./images/close-black.svg"></use>
-            </svg>
-          </button>
         </nav>
         <address>
           <ul class="contacts list">
@@ -45,13 +40,33 @@
                 >info@devstudio.com</a
               >
             </li>
-            <li class="item">
+            <li class="item telephone">
               <a href="tel:+110001111111" class="link no-underline"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+                  
+        <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          width="32"
+          height="32"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
       </div>
     </header>
 
@@ -159,6 +174,9 @@
           <ul class="team list">
             <li class="employees">
               <img
+                srcset="
+                ./images/Mark-Guerrero.jpg 1x,
+                ./images/Mark-Guerrero2x.jpg 2x"
                 src="./images/Mark-Guerrero.jpg"
                 alt="Mark-Guerrero"
                 width="264"
@@ -201,6 +219,9 @@
             </li>
             <li class="employees">
               <img
+              srcset="
+              ./images/Tom-Ford.jpg 1x,
+              ./images/Tom-Ford2x.jpg 2x"
                 src="./images/Tom-Ford.jpg"
                 alt="Tom-Ford"
                 width="264"
@@ -243,6 +264,9 @@
             </li>
             <li class="employees">
               <img
+                srcset="
+                ./images/Camila-Garcia.jpg 1x,
+                ./images/Camila-Garcia2x.jpg 2x"
                 src="./images/Camila-Garcia.jpg"
                 alt="Camila-Garcia"
                 width="264"
@@ -285,6 +309,9 @@
             </li>
             <li class="employees">
               <img
+                srcset="
+                ./images/Daniel-Wilson.jpg 1x,
+                ./images/Daniel-Wilson2x.jpg 2x"
                 src="./images/Daniel-Wilson.jpg"
                 alt="Daniel-Wilson"
                 width="264"
@@ -492,6 +519,90 @@
         </form>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle close-menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="8"
+          height="8"
+          class="mobile-menu-close-btn"
+        >
+          <path
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="site-nav list">
+        <li class="item">
+          <a href="./index.html" class="link no-underline"
+            >Studio</a
+          >
+        </li>
+        <li class="item">
+          <a href="./portfolio.html" class="link no-underline">Portfolio</a>
+        </li>
+        <li class="item">
+          <a href="#" class="link current no-underline">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <address>
+      <ul class="contacts list">
+        <li class="item mail">
+          <a href="mailto:info@devstudio.com" class="link no-underline"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="item telephone">
+          <a href="tel:+110001111111" class="mobile-telephone-link no-underline"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+      </ul>
+      <ul class="social-media-mobile list">
+        <li>
+          <a class="social-media-link-mobile" href="#">
+            <svg class="social-media-icon-mobile" width="24px" height="24px">
+              <use href="./images/symbol-defs.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-media-link-mobile" href="#">
+            <svg class="social-media-icon-mobile" width="24px" height="24px">
+              <use href="./images/symbol-defs.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-media-link-mobile" href="#">
+            <svg class="social-media-icon-mobile" width="24px" height="24px">
+              <use href="./images/symbol-defs.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-media-link-mobile" href="#">
+            <svg class="social-media-icon-mobile" width="24px" height="24px">
+              <use href="./images/symbol-defs.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </address>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
