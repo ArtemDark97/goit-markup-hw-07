@@ -72,7 +72,7 @@
 
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container mobile-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button data-modal-open type="button" class="hero-btn">
             Order Service
@@ -81,7 +81,7 @@
       </section>
 
       <section class="section-feature">
-        <div class="container">
+        <div class="container feature-tablet-container mobile-container">
           <h2 class="section-title visually-hidden">features</h2>
           <ul class="feature list">
             <li class="item">
@@ -146,7 +146,7 @@
                 alt="computer"
                 width="360"
                 height="300"
-              />
+              />.
             </li>
             <li class="item">
               <img
@@ -169,7 +169,7 @@
       </section>
 
       <section class="team-section">
-        <div class="container">
+        <div class="container tablet-container mobile-container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team list">
             <li class="employees">
@@ -357,7 +357,7 @@
       </section>
 
       <section class="customers-section">
-        <div class="container">
+        <div class="container tablet-container">
           <h2 class="section-title">Customers</h2>
           <ul class="customers list">
             <li class="customers-image">
@@ -401,7 +401,7 @@
       </section>
     </main>
     <footer class="bottom">
-      <div class="container footer-container">
+      <div class="container footer-container tablet-container mobile-footer-container">
         <div class="footer-desc">
           <div class="footer-information">
             <a href="./index.html" class="logo down no-underline"
@@ -515,7 +515,9 @@
             <input class="checkbox visually-hidden" type="checkbox" name="topic" value="accept" id="accept" />
             <label class="accept-label" for="accept">I accept the terms and conditions of the&nbsp;<a class="accept-link" href="#">Privacy Policy</a></label>
           </p>
-          <button class="send-modal-btn" type="submit">Send</button>
+          <div class="send-btn-position">
+            <button class="send-modal-btn" type="submit">Send</button>
+          </div>
         </form>
       </div>
     </div>
